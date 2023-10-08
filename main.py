@@ -25,7 +25,7 @@ try:
     if matching_sheets:
         sheet = workbook[matching_sheets[0]]  # Select the matching sheet
 
-        for row in range(2, sheet.max_row + 1):  # Start from row 2 (assuming row 1 is the header)
+        for row in range(2, sheet.max_row + 1):  # Start from row 2 
             search_term = sheet.cell(row=row, column=3).value
 
             if search_term:
